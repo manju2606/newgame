@@ -244,9 +244,8 @@
                     <!--</plugin>-->
 
                     <!-- PMD -->
-<<<<<<< HEAD
-					
-					 <!-- Cobertura  -->
+
+					<!-- Cobertura  -->
 					
 					<plugin>
                         <groupId>org.codehaus.mojo</groupId>
@@ -259,10 +258,7 @@
                     </plugin>
 					
 					 <!-- Cobertura Ends -->
-					
-					
-=======
->>>>>>> 822246b265169434a4bd70921509806dba1426b7
+					 
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
