@@ -223,6 +223,7 @@
             <id>metrics</id>
             <build>
                 <plugins>
+				
                     <!-- CHECKSTYLE -->
                     <!--<plugin>-->
                         <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
@@ -240,6 +241,22 @@
                     <!--</plugin>-->
 
                     <!-- PMD -->
+					
+					 <!-- Cobertura  -->
+					
+					<plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>cobertura-maven-plugin</artifactId>
+                        <version>2.5.1</version>
+                        <configuration>
+                            <format>html</format>
+							<format>xml</format>
+                        </configuration>
+                    </plugin>
+					
+					 <!-- Cobertura Ends -->
+					
+					
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
@@ -275,7 +292,7 @@
             </activation>
             <build>
                 <plugins>
-                    <plugin>
+					<plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
                         <version>1.0</version>
@@ -495,4 +512,28 @@
             </reporting>
         </profile>
     </profiles>
+	 <!-- Cobertura  -->
+	<profiles>    
+		<profile>      
+			<id>metrics</id>      
+			<build>        
+				<plugins>          
+					<plugin>            
+						<groupId>org.codehaus.mojo</groupId>            
+						<artifactId>cobertura-maven-plugin</artifactId>            
+						<version>2.5.1</version>            
+						<configuration>              
+							<formats>                
+								<format>html</format>                
+								<format>xml</format>              
+							</formats>           
+						</configuration>         
+					</plugin>       
+				</plugins>      
+			</build>    
+		</profile>    
+	</profiles> 
+	 <!-- Cobertura Ends  -->
+	
+	
 </project>
