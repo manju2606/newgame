@@ -223,7 +223,10 @@
             <id>metrics</id>
             <build>
                 <plugins>
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 822246b265169434a4bd70921509806dba1426b7
                     <!-- CHECKSTYLE -->
                     <!--<plugin>-->
                         <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
@@ -241,6 +244,7 @@
                     <!--</plugin>-->
 
                     <!-- PMD -->
+<<<<<<< HEAD
 					
 					 <!-- Cobertura  -->
 					
@@ -257,6 +261,8 @@
 					 <!-- Cobertura Ends -->
 					
 					
+=======
+>>>>>>> 822246b265169434a4bd70921509806dba1426b7
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
@@ -292,7 +298,11 @@
             </activation>
             <build>
                 <plugins>
+<<<<<<< HEAD
 					<plugin>
+=======
+                    <plugin>
+>>>>>>> 822246b265169434a4bd70921509806dba1426b7
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
                         <version>1.0</version>
@@ -512,6 +522,7 @@
             </reporting>
         </profile>
     </profiles>
+<<<<<<< HEAD
 	 <!-- Cobertura  -->
 	<profiles>    
 		<profile>      
@@ -536,4 +547,6 @@
 	 <!-- Cobertura Ends  -->
 	
 	
+=======
+>>>>>>> 822246b265169434a4bd70921509806dba1426b7
 </project>

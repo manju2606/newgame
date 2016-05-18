@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 #editing the file
 package com.wakaleo.gameoflife.domain;
 
 public enum Cell {
     LIVE_CELL("+"), DEAD_CELL(".");
+=======
+package com.wakaleo.gameoflife.domain;
+
+public enum Cell {
+    LIVE_CELL("*"), DEAD_CELL(".");
+>>>>>>> 822246b265169434a4bd70921509806dba1426b7
 
     private String symbol;
 

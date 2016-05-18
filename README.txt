@@ -1,3 +1,5 @@
+#  Test changes
+
 echo "# newgame" >> README.md
 git init
 git add README.txt
