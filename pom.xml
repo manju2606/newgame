@@ -370,13 +370,13 @@
                                 </plugin>
                             </reportPlugins>
                         </configuration>
-                        <dependencies>
+                  <!--      <dependencies>
                             <dependency>
                                 <groupId>com.wakaleo.gameoflife</groupId>
                                 <artifactId>gameoflife-build</artifactId>
                                 <version>${project.version}</version>
-                            </dependency>
-                        </dependencies>
+                            </dependency> 
+                        </dependencies>-->
                     </plugin>
                 </plugins>
             </build>
