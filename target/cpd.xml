@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="7" tokens="40">
+      <file line="29"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <file line="40"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <codefragment><![CDATA[    @RequestMapping("/start")
+    public ModelAndView firstGeneration(@RequestParam("rows") final int rows,
+                                        @RequestParam("columns") final int columns,
+                                        final HttpServletRequest request) {
+
+        Universe universe = universeInstanciatedFromClickedCells(rows, columns, request);
+        thinkABit(200);]]></codefragment>
+   </duplication>
+   <duplication lines="3" tokens="32">
+      <file line="64"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <file line="76"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <codefragment><![CDATA[        Universe universe = new Universe(rows, columns);
+        for (int row = 0; row < rows; row++) {
+            for (int column = 0; column < columns; column++) {]]></codefragment>
+   </duplication>
+   <duplication lines="5" tokens="28">
+      <file line="41"
+            path="C:\Manju\Jenkins\newgame\gameoflife-core\src\main\java\com\wakaleo\gameoflife\domain\Universe.java"/>
+      <file line="64"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <codefragment><![CDATA[        int maxColumn = currentGridContent.getHeight();
+        // TODO: simplify this code
+        for (int y = 0; y < maxRow; y++) {
+            for (int x = 0; x < maxColumn; x++) {
+                Cell currentCell = currentGridContent.getCellAt(x, y);]]></codefragment>
+   </duplication>
+   <duplication lines="6" tokens="28">
+      <file line="74"
+            path="C:\Manju\Jenkins\newgame\gameoflife-core\src\main\java\com\wakaleo\gameoflife\domain\Universe.java"/>
+      <file line="82"
+            path="C:\Manju\Jenkins\newgame\gameoflife-core\src\main\java\com\wakaleo\gameoflife\domain\Universe.java"/>
+      <codefragment><![CDATA[        return currentGridContent.getContents();
+    }
+
+    public void setLiveCellAt(final int row, final int column) {
+        this.currentGridContent.setCellAt(column, row, LIVE_CELL);
+    }]]></codefragment>
+   </duplication>
+   <duplication lines="3" tokens="27">
+      <file line="32"
+            path="C:\Manju\Jenkins\newgame\gameoflife-core\src\main\java\com\wakaleo\gameoflife\domain\Grid.java"/>
+      <file line="43"
+            path="C:\Manju\Jenkins\newgame\gameoflife-core\src\main\java\com\wakaleo\gameoflife\domain\Universe.java"/>
+      <file line="65"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <codefragment><![CDATA[        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                deadCells[i][j] = DEAD_CELL;]]></codefragment>
+   </duplication>
+   <duplication lines="4" tokens="27">
+      <file line="41"
+            path="C:\Manju\Jenkins\newgame\gameoflife-core\src\main\java\com\wakaleo\gameoflife\domain\Universe.java"/>
+      <file line="76"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <codefragment><![CDATA[        int maxColumn = currentGridContent.getHeight();
+        // TODO: simplify this code
+        for (int y = 0; y < maxRow; y++) {
+            for (int x = 0; x < maxColumn; x++) {]]></codefragment>
+   </duplication>
+   <duplication lines="2" tokens="26">
+      <file line="32"
+            path="C:\Manju\Jenkins\newgame\gameoflife-core\src\main\java\com\wakaleo\gameoflife\domain\Grid.java"/>
+      <file line="77"
+            path="C:\Manju\Jenkins\newgame\gameoflife-web\src\main\java\com\wakaleo\gameoflife\webtests\controllers\GameController.java"/>
+      <codefragment><![CDATA[        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {]]></codefragment>
+   </duplication>
+</pmd-cpd>

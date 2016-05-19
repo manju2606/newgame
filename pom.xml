@@ -183,7 +183,19 @@
                 <version>${easyb.version}</version>
                 <scope>test</scope>
             </dependency>
-        </dependencies>
+       
+              <!--              <dependency>
+                                <groupId>com.wakaleo.gameoflife</groupId>
+                                <artifactId>gameoflife-build</artifactId>
+                                <version>${project.version}</version>
+                            </dependency> 
+                       
+                            <dependency>
+                                <groupId>com.wakaleo.gameoflife</groupId>
+                                <artifactId>gameoflife-core</artifactId>
+                                <version>${project.version}</version>
+                            </dependency> -->
+                        </dependencies>
     </dependencyManagement>
     <dependencies>
         <dependency>
@@ -370,7 +382,7 @@
                                 </plugin>
                             </reportPlugins>
                         </configuration>
-                  <!--      <dependencies>
+                      <!--  <dependencies>
                             <dependency>
                                 <groupId>com.wakaleo.gameoflife</groupId>
                                 <artifactId>gameoflife-build</artifactId>
@@ -409,13 +421,13 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-site-plugin</artifactId>
                         <version>2.1.1</version>
-                        <dependencies>
+                    <!--    <dependencies>
                             <dependency>
                                 <groupId>com.wakaleo.gameoflife</groupId>
                                 <artifactId>gameoflife-build</artifactId>
                                 <version>${project.version}</version>
-                            </dependency>
-                        </dependencies>
+                            </dependency> 
+                        </dependencies> -->
                     </plugin>
                 </plugins>
             </build>
@@ -495,4 +507,10 @@
             </reporting>
         </profile>
     </profiles>
+	<distributionManagement>
+		<repository>
+			<id>nexus-site</id>
+			<url>file:///C:/Manju/DevOps/DeploySample</url>
+		</repository>
+	</distributionManagement>
 </project>
