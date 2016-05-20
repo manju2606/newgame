@@ -8,12 +8,16 @@ import static org.hamcrest.Matchers.is;
 import org.junit.Test;
 
 public class WhenYouCreateACell {
+	
+	/*
 
     @Test
     public void aLiveCellShouldBeRepresentedByAnAsterisk() {
         Cell cell = Cell.fromSymbol("*");
         assertThat(cell, is(LIVE_CELL));
     }
+	
+	
 
     @Test
     public void aDeadCellShouldBeRepresentedByADot() {
@@ -41,5 +45,7 @@ public class WhenYouCreateACell {
     public void aLiveCellSymbolShouldBeAnAsterisk() {
         assertThat(Cell.LIVE_CELL.getSymbol(), is("*"));
     }
+	
+	*/
 
 }

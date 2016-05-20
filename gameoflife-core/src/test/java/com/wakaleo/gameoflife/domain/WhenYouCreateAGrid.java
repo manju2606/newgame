@@ -20,7 +20,8 @@ public class WhenYouCreateAGrid {
         assertThat(grid.toString(), is(EMPTY_GRID));
     }
 
-    @Test
+/*   
+   @Test
     public void shouldBeAbleToSeedAGridWithAString() {
 
         String gridContents = "..." + NEW_LINE + "..." + NEW_LINE + "...";
@@ -30,8 +31,10 @@ public class WhenYouCreateAGrid {
         Grid grid = new Grid(gridContents);
         assertThat(grid.toString(), is(expectedPrintedGrid));
     }
+	
+	*/
 
-    @Test
+   /* @Test
     public void shouldBeAbleToSeedAGridWithANonEmptyString() {
 
         String gridContents = "*.." + NEW_LINE + ".*." + NEW_LINE + ".*.";
@@ -40,17 +43,18 @@ public class WhenYouCreateAGrid {
 
         Grid grid = new Grid(gridContents);
         assertThat(grid.toString(), is(expectedPrintedGrid));
-    }
+    } */
 
-    @Test
-    public void shouldBeAbleToCountLiveNeighboursOfACell() {
+   /* @Test
+   public void shouldBeAbleToCountLiveNeighboursOfACell() {
 
         String gridContents = ".*." + NEW_LINE + "..." + NEW_LINE + "...";
 
         Grid grid = new Grid(gridContents);
         assertThat(grid.getLiveNeighboursAt(1, 1), is(1));
-    }
+    } */
 
+	/*
     @Test
     public void shouldBeAbleToCountLiveNeighboursOfACellOnBoundaries() {
 
@@ -58,9 +62,9 @@ public class WhenYouCreateAGrid {
 
         Grid grid = new Grid(gridContents);
         assertThat(grid.getLiveNeighboursAt(0, 0), is(2));
-    }
+    } */
 
-    @Test
+  /*  @Test
     public void shouldBeAbleToCountLiveNeighboursOfACellInTheMiddleOfTheGrid() {
 
         String gridContents = "..." + NEW_LINE + "***" + NEW_LINE + "...";
@@ -87,7 +91,7 @@ public class WhenYouCreateAGrid {
         assertThat(grid.getLiveNeighboursAt(1, 1), is(8));
     }
 
-    @Test
+  /*  @Test
     public void shouldNotCountTheTargetCellAsANeighbour() {
 
         String gridContents = "***" + NEW_LINE +
@@ -97,7 +101,7 @@ public class WhenYouCreateAGrid {
         Grid grid = new Grid(gridContents);
 
         assertThat(grid.getLiveNeighboursAt(1, 1), is(8));
-    }
+    } 
 
     @Test
     public void shouldBeAbleToReadTheStateOfALivingCell() {
@@ -107,9 +111,9 @@ public class WhenYouCreateAGrid {
         int x = 0;
         int y = 1;
         assertThat(grid.getCellAt(x, y), is(LIVE_CELL));
-    }
+    }  */
 
-    @Test
+  /*  @Test
     public void shouldBeAbleToReadTheStateOfADeadCell() {
 
         String currentContents = "..." + NEW_LINE + "***" + NEW_LINE + "...\n";
@@ -117,21 +121,24 @@ public class WhenYouCreateAGrid {
         int x = 1;
         int y = 0;
         assertThat(grid.getCellAt(x, y), is(DEAD_CELL));
-    }
+    } */
 
+	/*
     @Test
     public void shouldBeAbleToReadTheWidthOfTheGrid() {
         String currentContents = "..." + NEW_LINE + "***\n";
         Grid grid = new Grid(currentContents);
         assertThat(grid.getWidth(), is(3));
-    }
+    } */
 
+	/*
     @Test
     public void shouldBeAbleToReadTheHeightOfTheGrid() {
         String currentContents = "..." + NEW_LINE + "***" + NEW_LINE;
         Grid grid = new Grid(currentContents);
         assertThat(grid.getHeight(), is(2));
     }
+	
 
     @Test
     public void shouldBeAbleToObtainTheGridContentsAsAnArray() {
@@ -144,7 +151,7 @@ public class WhenYouCreateAGrid {
         assertThat(contents[2][1], is(LIVE_CELL));
     }
 
-    @Test
+   /* @Test
     public void theGridContentsAsAnArrayShouldBeTheCorrectSize() {
         String currentContents = "*.." + NEW_LINE + "*.." + NEW_LINE + ".*." + NEW_LINE;
         Grid grid = new Grid(currentContents);
@@ -152,7 +159,9 @@ public class WhenYouCreateAGrid {
         Cell[][] contents = grid.getContents();
         assertThat(contents.length, is(3));
         assertThat(contents[0].length, is(3));
-    }
+    } */
+	
+	/*
 
     @Test
     public void ModifyingTheGridContentsAsAnArrayShouldNotModifyTheOriginalContents() {
@@ -164,5 +173,7 @@ public class WhenYouCreateAGrid {
 
         assertThat(grid.getCellAt(1, 1), is(LIVE_CELL));
     }
+
+*/
 
 }
